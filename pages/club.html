@@ -6,15 +6,25 @@
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <title>Paris 5 Muay Thai</title>
+    <title>Paris 5 Muay Thai -Le club</title>
 
     <link rel="stylesheet" href="../public/CSS/nav.css" />
     <link rel="stylesheet" href="../public/CSS/style.css" />
   </head>
   <body>
-    <div class="nav"></div>
-
-    <h1>Le Club</h1>
+    <div></div>
   </body>
-  <script src="../public/JS/nav.js"></script>
+  <div id="navbar"></div>
+
+  <main>
+    <h1>Le club</h1>
+  </main>
+
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
 </html>

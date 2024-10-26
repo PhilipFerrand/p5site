@@ -6,10 +6,10 @@ function createMenu() {
   nav.innerHTML = `
   
   <div class="left">
-    <a href="/"><img src="../public/img/logo.png" alt="" /></a>
+    <a href="../index.html"><img src="/public/img/logo.png" alt="Logo" /></a>
   </div>
   <div class="right">
-    <a href="/pages/club.html" aria-label="Club page">Le club</a>
+    <a href="../pages/club.html" aria-label="Club page">Le club</a>
     <a href="#" aria-label="Information sur le club">Informations</a>
     <a href="#" aria-label="Les photos du club">Diaporama</a>
     <a href="#" aria-label="Nous contacter">Contact</a>
