@@ -6,7 +6,7 @@ function createMenu() {
   nav.innerHTML = `
   
   <div class="left">
-    <a href="../index.html"><img src="../public/img/logo.png" alt="Logo" /></a>
+    <a href="../index.html"><img src="https://github.com/Splendira/p5site/blob/main/public/img/logo.png" alt="Logo" /></a>
   </div>
   <div class="right">
     <a href="../pages/club.html" aria-label="Club page">Le club</a>
