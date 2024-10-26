@@ -38,27 +38,26 @@ img {
 }
 
 @media screen and (max-width: 835px) {
-   .right {
+  .right {
     display: none;
-    right: -50%;
+    left: -50%;
     width: 50%;
     height: calc(100vh - 64px);
     top: 64px;
     position: absolute;
     background-color: #222;
     flex-direction: column;
-    z-index: -1;
     padding: 30px;
+    z-index: -44;
     gap: 30px;
-
-    transition: right 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
   }
 
-   .right.active-menu {
-    right: 0;
+  .right.active-menu {
+    left: 0;
   }
 
-   .right a {
+  .right a {
     font-size: 30px;
   }
 
@@ -68,13 +67,13 @@ img {
 }
 
 @media screen and (max-width: 553px) {
-   .right a {
+  .right a {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 396px) {
-   .right a {
+  .right a {
     font-size: 16px;
   }
 }

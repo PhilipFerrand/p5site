@@ -1,4 +1,8 @@
-<nav>
+const body = document.querySelector("body");
+
+function createNavBar() {
+  const nav = document.createElement("nav");
+  nav.innerHTML = ` 
   <div class="left">
     <a href="./"><img src="./public/img/logo.png" alt="Logo" /></a>
   </div>
@@ -12,5 +16,18 @@
 
   <div class="hamburger-icone">
     <i class="bx bx-menu"></i>
-  </div>
-</nav>
+  </div>`;
+
+  body.prepend(nav);
+
+  const hamburgerIcone = document.querySelector(".hamburger-icone");
+  const menu = document.querySelector(".right");
+
+  hamburgerIcone.addEventListener("click", activeMenu);
+
+  function activeMenu() {
+    menu.classList.toggle("active-menu");
+  }
+}
+
+createNavBar();

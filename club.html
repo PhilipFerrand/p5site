@@ -8,23 +8,13 @@
 
     <title>Paris 5 Muay Thai -Le club</title>
 
-    <link rel="stylesheet" href="public/CSS/nav.css" />
-    <link rel="stylesheet" href="public/CSS/style.css" />
+    <link rel="stylesheet" href=" public/CSS/nav.css" />
+    <link rel="stylesheet" href=" public/CSS/style.css" />
   </head>
   <body>
-    <div></div>
-  </body>
-  <div id="navbar"></div>
+    <!-- NAV GERE EN JS -->
 
-  <main>
     <h1>Le club</h1>
-  </main>
-
-  <script>
-    fetch("components/navbar.html")
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-  </script>
+    <script src="public/JS/nav.js"></script>
+  </body>
 </html>
