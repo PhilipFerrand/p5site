@@ -4,16 +4,172 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <title>Paris 5 Muay Thai</title>
 
     <link rel="stylesheet" href="public/CSS/nav.css" />
+    <link rel="stylesheet" href="public/CSS/index.css" />
     <link rel="stylesheet" href="public/CSS/style.css" />
   </head>
   <body>
     <!-- NAV GERE EN JS -->
+    <main class="index-main">
+      <section class="hero">
+        <div class="container-text-title">
+          <p class="title">Paris 5</p>
+          <br />
+          <p class="title">Muay Thai</p>
+        </div>
+        <div class="container-video">
+          <video src="public/videos/hero-video.mp4" autoplay muted loop></video>
+        </div>
+      </section>
+
+      <section class="presentation-section">
+        <div class="presentation-container">
+          <div class="text-presentation">
+            <h2 class="main-title">Nos Valeurs et Nos Champions</h2>
+
+            <p class="text-presentation">
+              Ouverte depuis 2005, Paris 5 Muay Thaï (P5MT) est un lieu dédié à la boxe thaïlandaise, imprégné d’un
+              esprit familial et de passion. Fidèle à l’atmosphère des camps de muay thaï en Thaïlande, le club
+              privilégie un état d’esprit chaleureux et respectueux. Nos entraînements sont accessibles à tous les
+              publics : femmes et hommes, adultes et enfants, débutants et confirmés.
+            </p>
+
+            <p class="text-presentation">
+              P5MT a eu le privilège d’accueillir de grands champions, parmi lesquels
+              <b>Stéphane Nikiema</b>
+              ,
+              <b>Guillaume Kerner</b>
+              ,
+              <b>Dany Bill</b>
+              ,
+              <b>Jean-Charles Skarbowsky</b>
+              , ainsi que les combattants thaïlandais
+              <b>Wannop Kaewsalee</b>
+              ,
+              <b>Som Chaï</b>
+              ,
+              <b>Sudareth</b>
+              ,
+              <b>Aekpracha</b>
+              ,
+              <b>Dernchonlek</b>
+              , et bien d’autres.
+            </p>
+          </div>
+
+          <div class="photo-presention">
+            <img class="presentation-img" src="public/img/image-presentation.jpg" alt="Photo d'un Boxeur" />
+          </div>
+        </div>
+      </section>
+
+      <section class="our-champion">
+        <div class="grid-champion-container">
+          <!-- CARD GENERE AUTOMATIQUEMENT EN JS -->
+        </div>
+      </section>
+
+      <section class="coach-info">
+        <div class="grid-container-coach-info">
+          <div class="card-coach">
+            <div class="info-coach">
+              <h2 class="title-coach-info">Eddy Sam</h2>
+              <h3 class="subtitle-coach">Le coach</h3>
+              <p class="text-info-coach">
+                Dès l’âge de 14 ans, il débute la boxe thaïlandaise sous la tutelle de son oncle, Krongsak. Fort de plus
+                de 20 ans d’expérience en Muay Thaï, il a organisé de nombreux stages en Thaïlande, s’entraînant dans
+                des camps de renommée mondiale comme le 13 Coins Gym et le Meenayothin, ainsi qu’au Khuanjai Sikhot à
+                Vientiane, au Laos. Au fil des ans, il a perfectionné ses techniques au contact de grands champions tels
+                que Wannop Kaewsalee et Neth Sacknarong, champion du prestigieux Radjadamnaern et de Thaïlande.
+              </p>
+            </div>
+
+            <div class="coach-container-img">
+              <img src="public/img/eddy-sam.jpg" alt="Photo du boxeur et coach Eddy Sam" />
+            </div>
+          </div>
+          <div class="card-coach">
+            <div class="coach-container-img">
+              <img src="public/img/krongsak.jpg" alt="Photo du boxeur et coach Krongsak" />
+            </div>
+
+            <div class="info-coach">
+              <h2 class="title-coach-info">KRONGSAK</h2>
+              <h3 class="subtitle-coach">LE MAÎTRE</h3>
+              <p class="text-info-coach">
+                Athlète d’exception, il compte plus de 300 combats à son actif, avec un palmarès impressionnant. Double
+                champion de Thaïlande, champion en boxe anglaise amateur, six fois champion du monde de Muay Thaï, et
+                triple champion de kick-boxing, il est resté invaincu en Europe. Sa carrière remarquable, de 1980 à
+                1995, a profondément marqué l'histoire du Muay Thaï.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-club">
+        <div class="join-club-container">
+          <div class="text-join-club">
+            <h2 class="title-section-join-club">Vous souhaitez rejoindre P5MT ?</h2>
+
+            <h3>Tarifs d’adhésion</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Type d'Abonnement</th>
+                  <th>Tarif</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Salle de Sport Lucien Gaudin</td>
+                  <td>400€</td>
+                </tr>
+                <tr>
+                  <td>Lucien Gaudin + Physical Center (adulte)</td>
+                  <td>500€</td>
+                </tr>
+                <tr>
+                  <td>Lucien Gaudin + Physical Center (mineur)</td>
+                  <td>180€</td>
+                </tr>
+                <tr>
+                  <td>Physical Center uniquement (adulte)</td>
+                  <td>180€</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="note-join-club">
+              <span>Note</span>
+              : La licence est à la charge des compétiteurs. Les paiements peuvent être effectués en espèces ou par
+              chèque à l'ordre de Paris 5 Muay Thai.
+            </p>
+
+
+            <a class="btn-form" href="public/src/inscription.pdf" download>formulaire d'inscription</a>
+          </div>
+
+          <div class="container-img-join-club">
+            <img src="public/img/free-photo1.jpg" alt="" class="img-join-club" />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="public/JS/nav.js"></script>
+    <script src="public/JS/index.js"></script>
   </body>
 </html>

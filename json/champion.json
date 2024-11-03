@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dany Bill",
+    "image": "./public/img/dany-bill.jpg",
+    "alt": "Photo du boxeur Dany Bill"
+  },
+  {
+    "name": "Jean-Charles Skarbowsky",
+    "image": "./public/img/jean-charles-skarbrowsky.jpg",
+    "alt": "Photo du boxeur Jean-Charles Skarbowsky"
+  },
+  {
+    "name": "Stéphane Nikiema",
+    "image": "./public/img/stephane-nikiema.jpg",
+    "alt": "Photo du boxeur Stéphane Nikiema"
+  },
+  {
+    "name": "Guillaume Kerner",
+    "image": "./public/img/guillaume-kerner.jpg",
+    "alt": "Photo du boxeur Guillaume Kerner"
+  }
+]
