@@ -1,3 +1,4 @@
+// ALL SELECTION ELEMENTS
 const title = document.querySelector(".main-title");
 const imgPresentation = document.querySelector(".presentation-img");
 const textinfoPara = document.querySelectorAll(".text-presentation");
@@ -6,8 +7,14 @@ const subtitleCoach = document.querySelectorAll(".subtitle-coach");
 const textInfoCoach = document.querySelectorAll(".text-info-coach");
 const imgCoach = document.querySelectorAll(".coach-container-img");
 
-// TABLE PRICES
-const tablePrice = document.querySelector("table");
+// CARD PRICE INFO CLUB
+const cardPrice = document.querySelectorAll(".card-info-price");
+
+cardPrice.forEach((cardPrice) => {
+  window.addEventListener("scroll", () => {
+    handleAnimElement(cardPrice, "anim-card-price", 0.9);
+  });
+});
 
 textinfoPara.forEach((text) => {
   window.addEventListener("scroll", () => {
@@ -43,6 +50,12 @@ imgCoach.forEach((imgCoach) => {
   });
 });
 
+window.addEventListener("scroll", () => {
+  handleAnimElement(title, "active-title-anim", 0.7);
+  handleAnimElement(imgPresentation, "active-img", 0.7);
+});
+
+// FUNCTION
 function handleAnimElement(elementName, classNameToAdd, heigthElementMesure) {
   const { scrollTop, clientHeight } = document.documentElement;
   const topElement = elementName.getBoundingClientRect().top;
@@ -52,8 +65,3 @@ function handleAnimElement(elementName, classNameToAdd, heigthElementMesure) {
   }
 }
 
-window.addEventListener("scroll", () => {
-  handleAnimElement(title, "active-title-anim", 0.7);
-  handleAnimElement(imgPresentation, "active-img", 0.7);
-  handleAnimElement(tablePrice, "active-anim-price", 0.8);
-});

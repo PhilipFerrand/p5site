@@ -74,7 +74,6 @@ body {
 }
 
 .container-video {
-  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
   height: 100vh;
   width: 100%;
   filter: grayscale(100%);
@@ -148,7 +147,6 @@ body {
 }
 
 .main-title {
-  font-size: 60px;
   text-transform: uppercase;
   font-family: var(--font-fam-oswald);
   transform: translateY(100px);
@@ -181,7 +179,7 @@ body {
   width: 500px;
   object-fit: cover;
   object-position: top;
-  transform: translateX(100px);
+  transform: translateX(90px);
   opacity: 0;
   transition: transform 0.6s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -222,6 +220,7 @@ body {
 
 .coach-info {
   padding: 90px;
+  display: flex;
 }
 
 .grid-container-coach-info {
@@ -242,7 +241,6 @@ body {
 }
 
 .title-coach-info {
-  font-size: 60px;
   text-transform: uppercase;
   font-family: var(--font-fam-oswald);
   transform: translateY(80px);
@@ -334,119 +332,117 @@ body {
 }
 
 /* JOIN CLUB SECTION */
-.join-club {
+
+.info-club {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #111;
   color: #fff;
+  padding: 30px;
 }
 
-.join-club-container {
+.grid-info-price {
   display: flex;
-  height: max-content;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.container-img-join-club {
-  width: 50%;
-}
-
-.text-join-club {
-  padding: 40px;
-  width: 50%;
-}
-
-.title-section-join-club {
-  font-family: var(--font-fam-oswald);
-  text-transform: uppercase;
-  font-size: 60px;
-}
-
-table {
-  border-collapse: collapse;
-  margin-top: 20px;
-  width: 100%;
-  background: linear-gradient(to right, #8b0000, #111);
-  transform: translateX(-100%);
+.card-info-price {
+  max-width: 320px;
+  height: 300px;
+  border: 2px solid #ffffff16;
+  border-top: 4px solid #8b0000;
+  padding: 30px;
+  font-size: 25px;
+  position: relative;
+  overflow: hidden;
   opacity: 0;
-  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transform: translateY(30px);
 }
 
-table.active-anim-price {
-  transform: translateX(0);
-  opacity: 1;
+.card-info-price.anim-card-price:nth-child(1) {
+  animation: card-price 0.4s ease-in-out forwards;
 }
 
-table tr td,
-table tr th {
-  border: 1px solid #f1f1f1;
+.card-info-price.anim-card-price:nth-child(1) {
+  animation: card-price 0.4s 0.2s ease-in-out forwards;
+}
+
+.card-info-price.anim-card-price:nth-child(2) {
+  animation: card-price 0.4s 0.4s ease-in-out forwards;
+}
+
+.card-info-price.anim-card-price:nth-child(3) {
+  animation: card-price 0.4s 0.6s ease-in-out forwards;
+}
+.card-info-price.anim-card-price:nth-child(4) {
+  animation: card-price 0.4s 0.8s ease-in-out forwards;
+}
+
+@keyframes card-price {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card-info-price .price {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -50px;
+  background-color: #8b0000;
+  width: 100%;
+  text-align: center;
   padding: 20px;
+  transition: bottom 0.3s ease-in-out;
 }
 
-.text-join-club h3 {
-  font-size: 32px;
-  margin-top: 25px;
+.card-info-price:hover .price {
+  bottom: 0;
 }
 
-.note-join-club {
-  margin-top: 15px;
-  font-weight: 600;
-  font-style: italic;
+.info-club h2 {
+  font-family: var(--font-fam-oswald);
 }
 
-.note-join-club > span {
-  color: red;
-}
-
-.physical-text {
-  margin: 10px 0;
-}
-
-li span {
-  font-weight: 600;
-}
-
-.btn-form {
+.more-club-btn {
   display: block;
-  padding: 10px;
+  margin-top: 30px;
+  font-size: 18px;
   background-color: #8b0000;
   color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
+  padding: 12px 20px;
   border-radius: 5px;
-  margin-top: 20px;
-  max-width: max-content;
+  text-decoration: none;
+  min-width: 200px;
+  text-align: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transition: color 0.3s ease-in-out;
 }
 
-.btn-form::after {
+.more-club-btn:hover {
+  color: #8b0000;
+}
+
+.more-club-btn::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 5px;
   width: 100%;
   height: 100%;
   background-color: #fff;
+  border-radius: 5px;
+  transform: translateX(-100%);
   z-index: -1;
-  transform: translate(-100%);
   transition: transform 0.3s ease-in-out;
 }
 
-.btn-form:hover::after {
-  transform: translate(0);
-}
-
-.btn-form:hover {
-  color: #111;
-}
-
-.container-img-join-club img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-
-@media screen and (max-width: 1083px) {
+.more-club-btn:hover::after {
+  transform: translateX(0);
 }
