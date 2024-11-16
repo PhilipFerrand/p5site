@@ -358,11 +358,6 @@ body {
   background-color: #8b0000;
 }
 
-@media (pointer: coarse) {
-  .our-champions-title {
-    color: orange;
-  }
-}
 .glove-img {
   position: relative;
   left: 50%;
@@ -546,6 +541,12 @@ body {
 
 .card-info-price:hover .price {
   bottom: 0;
+}
+
+@media (pointer: coarse) {
+  .card-info-champion .price {
+    bottom: 0;
+  }
 }
 
 .info-club h2 {
