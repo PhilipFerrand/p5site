@@ -20,7 +20,6 @@ function createNavBar() {
     </div>`;
 
     bodyNav.prepend(nav);
-    console.log(document.querySelector("nav")); // Vérifie si l'élément est bien ajouté
 
     const hamburgerIcone = document.querySelector(".hamburger-icone");
     const icone = document.querySelector(".hamburger-icone i");

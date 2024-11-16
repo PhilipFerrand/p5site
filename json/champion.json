@@ -2,21 +2,25 @@
   {
     "name": "Dany Bill",
     "image": "./public/img/dany-bill.jpg",
-    "alt": "Photo du boxeur Dany Bill"
+    "alt": "Photo du boxeur Dany Bill",
+    "description": "Dany Bill, né au Cameroun en 1973, est une légende du Muay Thai. Établi en France, il a marqué les années 1990 avec son style technique et élégant, remportant plusieurs titres mondiaux. Surnommé The King, il a contribué à populariser le Muay Thai en Europe et inspire encore aujourd'hui de nombreux combattants."
   },
   {
     "name": "Jean-Charles Skarbowsky",
     "image": "./public/img/jean-charles-skarbrowsky.jpg",
-    "alt": "Photo du boxeur Jean-Charles Skarbowsky"
+    "alt": "Photo du boxeur Jean-Charles Skarbowsky",
+    "description": "Jean-Charles Skarbowsky, né en 1975 en France, est une icône du Muay Thai. Connu pour son style offensif et son mental d'acier, il a combattu au plus haut niveau en Thaïlande, devenant l'un des rares occidentaux à se faire un nom dans ce sport. Triple champion d'Europe et multiple champion du monde, il est aujourd'hui une figure incontournable du Muay Thai français."
   },
   {
     "name": "Stéphane Nikiema",
     "image": "./public/img/stephane-nikiema.jpg",
-    "alt": "Photo du boxeur Stéphane Nikiema"
+    "alt": "Photo du boxeur Stéphane Nikiema",
+    "description": "Stéphane Nikiéma, né en 1971 au Burkina Faso et ayant grandi en France, est une figure emblématique du Muay Thai. Reconnu pour sa puissance et son style polyvalent, il a combattu les meilleurs en Thaïlande et a marqué l'histoire en devenant plusieurs fois champion du monde. Avec une carrière impressionnante, il reste une source d'inspiration pour les pratiquants du Muay Thai à travers le monde."
   },
   {
     "name": "Guillaume Kerner",
     "image": "./public/img/guillaume-kerner.jpg",
-    "alt": "Photo du boxeur Guillaume Kerner"
+    "alt": "Photo du boxeur Guillaume Kerner",
+    "description": "Guillaume Kerner, né en 1972 en France, est une légende du Muay Thai français. Premier occidental à remporter un titre majeur au mythique stadium de Rajadamnern en Thaïlande, il est reconnu pour sa technique raffinée et son courage face aux meilleurs combattants thaïlandais. Multiple champion d'Europe et du monde, il a marqué l'histoire du Muay Thai et inspire encore aujourd'hui les nouvelles générations."
   }
 ]

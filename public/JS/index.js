@@ -6,6 +6,7 @@ const titleCoachInfo = document.querySelectorAll(".title-coach-info");
 const subtitleCoach = document.querySelectorAll(".subtitle-coach");
 const textInfoCoach = document.querySelectorAll(".text-info-coach");
 const imgCoach = document.querySelectorAll(".coach-container-img");
+const boxingGloves = document.querySelector(".glove-img");
 
 // CARD PRICE INFO CLUB
 const cardPrice = document.querySelectorAll(".card-info-price");
@@ -50,12 +51,18 @@ imgCoach.forEach((imgCoach) => {
   });
 });
 
+// ANIM
 window.addEventListener("scroll", () => {
   handleAnimElement(title, "active-title-anim", 0.7);
   handleAnimElement(imgPresentation, "active-img", 0.7);
+  // handleAnimElement(boxingGloves, "active-anim-gloves", 0.8)
 });
 
-// FUNCTION
+
+
+
+
+// MAIN FUNCTION
 function handleAnimElement(elementName, classNameToAdd, heigthElementMesure) {
   const { scrollTop, clientHeight } = document.documentElement;
   const topElement = elementName.getBoundingClientRect().top;
@@ -64,4 +71,3 @@ function handleAnimElement(elementName, classNameToAdd, heigthElementMesure) {
     elementName.classList.add(classNameToAdd);
   }
 }
-
