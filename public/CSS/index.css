@@ -22,12 +22,6 @@ body {
   animation: text-color 0.3s 0.69s linear forwards;
 }
 
-@keyframes text-color {
-  100% {
-    color: #fff;
-  }
-}
-
 .title:nth-child(1)::after {
   content: "";
   position: absolute;
@@ -51,18 +45,6 @@ body {
   transform: translateX(0);
 
   animation: text 1.5s linear forwards;
-}
-
-@keyframes text {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(102%);
-  }
-  100% {
-    transform: translateX(202%);
-  }
 }
 
 .hero {
@@ -91,6 +73,7 @@ body {
   animation: video-appear 0.3s 1.5s linear forwards;
 }
 
+/* MEDIA */
 @media screen and (max-width: 768px) {
   .container-video {
     width: 100%;
@@ -99,9 +82,7 @@ body {
   .container-video {
     width: 50%;
   }
-}
 
-@media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
     gap: 5px;
@@ -130,7 +111,26 @@ body {
     object-position: 50% 35%;
   }
 }
-/* SECTION PRESENTATION */
+
+/* KEYFRAMES */
+@keyframes text {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(102%);
+  }
+  100% {
+    transform: translateX(202%);
+  }
+}
+
+@keyframes text-color {
+  100% {
+    color: #fff;
+  }
+}
+/* ---------------------------------------------START SECTION PRESENTATION------------------------------------------------ */
 .presentation-section {
   font-weight: 100;
   background-color: #f1f1f1;
@@ -188,6 +188,7 @@ body {
   opacity: 1;
 }
 
+/* MEDIA */
 @media screen and (max-width: 982px) {
   .main-title {
     font-size: 40px;
@@ -214,9 +215,9 @@ body {
     padding: 40px;
   }
 }
+/* -----------------------------------------------END SECTION PRESENTATION------------------------------------------------ */
 
-/* COACH SECTION */
-
+/* -----------------------------------------------START COACH SECTION----------------------------------------------------- */
 .coach-info {
   padding: 90px;
   display: flex;
@@ -302,6 +303,7 @@ body {
   border-radius: 10px;
 }
 
+/* MEDIA */
 @media screen and (max-width: 768px) {
   .coach-info {
     padding: 40px;
@@ -330,8 +332,14 @@ body {
   }
 }
 
-/* OUR CHAMPION SECTION */
+@media screen and (max-width: 350px) {
+  .grid-container-coach-info {
+    width: 100%;
+  }
+}
+/* -------------------------------------------------END COACH SECTION----------------------------------------------------- */
 
+/* ---------------------------------------- START OUR CHAMPION SECTION---------------------------------------------------- */
 .our-champion-section {
   background-color: #f1f1f1;
   position: relative;
@@ -345,6 +353,7 @@ body {
   margin: 0 auto 20px;
   width: max-content;
   position: relative;
+  font-size: clamp(30px, 5vw, 60px);
 }
 
 .our-champions-title::after {
@@ -372,14 +381,6 @@ body {
   transform: rotate(360deg);
 }
 
-@keyframes glove-anim {
-  100% {
-    opacity: 1;
-    width: 250px;
-  }
-}
-
-/* CONTAINER */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
@@ -457,20 +458,30 @@ body {
   line-height: 1.8;
   margin-top: 10px;
 }
-
-@media screen and (max-width: 537px) {
-  .our-champions-title {
-    font-size: 40px;
+/* MEDIA */
+@media (hover: none) {
+  .img-champion:hover {
+    transform: none;
   }
 }
+
 @media screen and (max-width: 500px) {
   .description {
     font-size: 13px;
   }
 }
 
-/* JOIN CLUB SECTION */
+/* KEYFRAMES */
+@keyframes glove-anim {
+  100% {
+    opacity: 1;
+    width: 250px;
+  }
+}
 
+/* ---------------------------------------- END OUR CHAMPION SECTION------------------------------------------------------ */
+
+/* ------------------------------------------START JOIN CLUB SECTION------------------------------------------------------ */
 .info-club {
   display: flex;
   flex-direction: column;
@@ -478,6 +489,11 @@ body {
   background-color: #111;
   color: #fff;
   padding: 30px;
+}
+
+.info-club h2 {
+  font-size: clamp(30px, 5vw, 60px);
+  font-family: var(--font-fam-oswald);
 }
 
 .grid-info-price {
@@ -520,13 +536,6 @@ body {
   animation: card-price 0.4s 0.8s ease-in-out forwards;
 }
 
-@keyframes card-price {
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .card-info-price .price {
   position: absolute;
   left: 50%;
@@ -541,16 +550,6 @@ body {
 
 .card-info-price:hover .price {
   bottom: 0;
-}
-
-@media (pointer: coarse) {
-  .card-info-champion .price {
-    bottom: 0;
-  }
-}
-
-.info-club h2 {
-  font-family: var(--font-fam-oswald);
 }
 
 .more-club-btn {
@@ -591,7 +590,37 @@ body {
   transform: translateX(0);
 }
 
-/* PARTNER CONTAINER */
+/* MEDIA */
+
+@media (pointer: coarse) {
+  .card-info-price .price {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-club h3 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-training-room {
+    font-size: 25px;
+  }
+}
+
+/* KEYFRAMES */
+@keyframes card-price {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* -----------------------------------------------END JOIN CLUB SECTION------------------------------------------------------ */
+
+/* -----------------------------------------------START PARTNER CONTAINER---------------------------------------------------- */
 .partner-section {
   padding: 60px;
 }
@@ -629,6 +658,49 @@ body {
   width: 100%;
 }
 
+/* MEDIA */
+
+@media (hover: none) {
+  .partner-container .partner:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partner-container {
+    display: grid;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  .partner-container .partner {
+    filter: grayscale(0);
+  }
+
+  .partner-track {
+    display: grid;
+    grid-template-columns: auto auto;
+    animation-play-state: paused;
+  }
+
+  .track-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .partner-track {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .partner-title {
+    font-size: 40px;
+  }
+}
+
+/* KEYFRAMES */
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -638,8 +710,4 @@ body {
   }
 }
 
-@media screen and (max-width: 469px) {
-  .partner-title {
-    font-size: 40px;
-  }
-}
+/* ------------------------------------------- END PARTNER CONTAINER------------------------------------------------------ */
